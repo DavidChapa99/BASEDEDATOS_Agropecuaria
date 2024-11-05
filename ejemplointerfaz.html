@@ -1,0 +1,39 @@
+<!--#Creado por David Chaparro-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><link rel="stylesheet" type="text/css" media="screen" href="interfazcss.css">
+    <meta http-equiv="=X-UA-Compatible" content="IE-edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale01.0">
+    <title>AGROSTMA</title>
+</head>
+<body>
+    <style>
+        .topnav {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <div class="topnav">
+        <a href="clientes.php">Clientes</a>
+        <a href="productos.php">Productos</a>
+        <a href="">Registro de Servicios</a>
+        <a href="reportes.php">Reportes</a>
+        <a href="">Alarmas</a>
+    </div>
+    <h1>AGROPECUARIA SANTA MARÍA</h1>
+    <p>¡Bienvenido!</p>
+    <p>Esta es la base de datos del área de servicio de la agropecuaria Santa María</p>
+    <label for="nombre">Ingrese su nombre: </label>
+    <input type="text" id="nombreInput">
+    <button onclick="saludar()">Saludar</button>
+    <p id="saludo"></p>
+    <script>
+        function saludar(){
+            var nombre = document.getElementById("nombreInput").value;
+            var saludo = "Hola, " + nombre.toUpperCase() + "!"; document.getElementById("saludo").innerText=saludo;
+        }
+    </script>
+</body>
+</html>
